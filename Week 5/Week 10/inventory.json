@@ -1,0 +1,26 @@
+[
+    {
+        "id": "10",
+        "name": "j",
+        "price": 10.0,
+        "stock": 10,
+        "type": "physical",
+        "weight": 0.0
+    },
+    {
+        "id": "P101",
+        "name": "Wireless Mouse",
+        "price": 29.9,
+        "stock": 15,
+        "type": "physical",
+        "weight": 0.25
+    },
+    {
+        "id": "D101",
+        "name": "Python E-book",
+        "price": 14.9,
+        "stock": 50,
+        "type": "digital",
+        "download_size": 12.5
+    }
+]

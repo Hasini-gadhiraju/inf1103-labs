@@ -1,0 +1,35 @@
+test_json_save_and_reload_preserves_types_and_values (test_lab7.TestInventory.test_json_save_and_reload_preserves_types_and_values) ... ok
+test_old_lab6_json_still_loads (test_lab7.TestInventory.test_old_lab6_json_still_loads) ... ok
+test_operations_with_both_types (test_lab7.TestInventory.test_operations_with_both_types) ... ok
+test_abstract_product_and_interface_cannot_be_instantiated (test_lab7.TestProductClasses.test_abstract_product_and_interface_cannot_be_instantiated) ... ok
+test_different_weights_change_shipping_cost (test_lab7.TestProductClasses.test_different_weights_change_shipping_cost) ... ok
+test_digital_inheritance_and_fulfilment (test_lab7.TestProductClasses.test_digital_inheritance_and_fulfilment) ... ok
+test_invalid_specialised_values (test_lab7.TestProductClasses.test_invalid_specialised_values) ... ok
+test_method_overriding_includes_parent_information (test_lab7.TestProductClasses.test_method_overriding_includes_parent_information) ... ok
+test_physical_inheritance_and_shipping (test_lab7.TestProductClasses.test_physical_inheritance_and_shipping) ... ok
+test_product_survives_inventory_being_deleted (test_lab8.TestInventoryAggregation.test_product_survives_inventory_being_deleted) ... ok
+test_remove_missing_product (test_lab8.TestInventoryAggregation.test_remove_missing_product) ... ok
+test_transfer_same_product_between_inventories (test_lab8.TestInventoryAggregation.test_transfer_same_product_between_inventories) ... ok
+test_both_subclasses_follow_update_stock_contract (test_lab8.TestLSPAndPolymorphism.test_both_subclasses_follow_update_stock_contract) ... ok
+test_one_inventory_uses_both_product_types (test_lab8.TestLSPAndPolymorphism.test_one_inventory_uses_both_product_types) ... ok
+test_same_function_accepts_both_subclasses (test_lab8.TestLSPAndPolymorphism.test_same_function_accepts_both_subclasses) ... ok
+test_type_hints (test_lab8.TestLSPAndPolymorphism.test_type_hints) ... ok
+test_cancel_clears_order_lines (test_lab8.TestOrderComposition.test_cancel_clears_order_lines) ... ok
+test_order_creates_lines_and_calculates_total (test_lab8.TestOrderComposition.test_order_creates_lines_and_calculates_total) ... ok
+test_quantity_must_be_positive (test_lab8.TestOrderComposition.test_quantity_must_be_positive) ... ok
+test_remove_order_line_without_destroying_product (test_lab8.TestOrderComposition.test_remove_order_line_without_destroying_product) ... ok
+test_two_orders_have_different_lines_for_same_product (test_lab8.TestOrderComposition.test_two_orders_have_different_lines_for_same_product) ... ok
+test_both_products_reference_same_supplier (test_lab8.TestSupplierAssociation.test_both_products_reference_same_supplier) ... ok
+test_deleting_supplier_variable_does_not_break_products (test_lab8.TestSupplierAssociation.test_deleting_supplier_variable_does_not_break_products) ... ok
+test_supplier_information (test_lab8.TestSupplierAssociation.test_supplier_information) ... ok
+
+----------------------------------------------------------------------
+Ran 24 tests in 0.002s
+
+OK
+Inventory saved successfully to inventory.json.
+inventory.json found.
+Inventory loaded successfully.
+inventory.json found.
+Inventory loaded successfully.
+Stock cannot be negative.
