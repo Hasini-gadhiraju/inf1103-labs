@@ -1,0 +1,28 @@
+test_product_survives_inventory_being_deleted (test_lab8.TestInventoryAggregation.test_product_survives_inventory_being_deleted) ... ok
+test_remove_missing_product (test_lab8.TestInventoryAggregation.test_remove_missing_product) ... ok
+test_transfer_same_product_between_inventories (test_lab8.TestInventoryAggregation.test_transfer_same_product_between_inventories) ... ok
+test_both_subclasses_follow_update_stock_contract (test_lab8.TestLSPAndPolymorphism.test_both_subclasses_follow_update_stock_contract) ... ok
+test_one_inventory_uses_both_product_types (test_lab8.TestLSPAndPolymorphism.test_one_inventory_uses_both_product_types) ... ok
+test_same_function_accepts_both_subclasses (test_lab8.TestLSPAndPolymorphism.test_same_function_accepts_both_subclasses) ... ok
+test_type_hints (test_lab8.TestLSPAndPolymorphism.test_type_hints) ... ok
+test_cancel_clears_order_lines (test_lab8.TestOrderComposition.test_cancel_clears_order_lines) ... ok
+test_order_creates_lines_and_calculates_total (test_lab8.TestOrderComposition.test_order_creates_lines_and_calculates_total) ... ok
+test_quantity_must_be_positive (test_lab8.TestOrderComposition.test_quantity_must_be_positive) ... ok
+test_remove_order_line_without_destroying_product (test_lab8.TestOrderComposition.test_remove_order_line_without_destroying_product) ... ok
+test_two_orders_have_different_lines_for_same_product (test_lab8.TestOrderComposition.test_two_orders_have_different_lines_for_same_product) ... ok
+test_both_products_reference_same_supplier (test_lab8.TestSupplierAssociation.test_both_products_reference_same_supplier) ... ok
+test_deleting_supplier_variable_does_not_break_products (test_lab8.TestSupplierAssociation.test_deleting_supplier_variable_does_not_break_products) ... ok
+test_supplier_information (test_lab8.TestSupplierAssociation.test_supplier_information) ... ok
+test_csv_bad_rows_and_missing (tests.test_lab9.TestWeek11.test_csv_bad_rows_and_missing) ... ok
+test_default_discount_and_shared_strategy (tests.test_lab9.TestWeek11.test_default_discount_and_shared_strategy) ... ok
+test_factory_physical_digital_and_bad_type (tests.test_lab9.TestWeek11.test_factory_physical_digital_and_bad_type) ... ok
+test_json_creation_uses_factory (tests.test_lab9.TestWeek11.test_json_creation_uses_factory) ... ok
+test_new_strategy_without_order_changes (tests.test_lab9.TestWeek11.test_new_strategy_without_order_changes) ... ok
+test_price_input_reprompts (tests.test_lab9.TestWeek11.test_price_input_reprompts) ... ok
+test_strategy_switch (tests.test_lab9.TestWeek11.test_strategy_switch) ... ok
+test_validation (tests.test_lab9.TestWeek11.test_validation) ... ok
+
+----------------------------------------------------------------------
+Ran 23 tests in 0.002s
+
+OK

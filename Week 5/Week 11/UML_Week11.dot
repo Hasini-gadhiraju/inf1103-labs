@@ -1,0 +1,27 @@
+digraph Lab9 {
+  graph [rankdir=LR, bgcolor="white", pad="0.2", nodesep="0.36", ranksep="0.65", splines=polyline, fontname="Helvetica", label="INF1103 Lab 9  |  Inventory Management System", labelloc=t, fontsize=22];
+  node [shape=record, style="rounded,filled", fillcolor="#F4F7FC", color="#475569", fontname="Helvetica", fontsize=11, margin="0.12,0.09"];
+  edge [color="#475569", fontname="Helvetica", fontsize=10, arrowsize=.75];
+  Product [label="{«abstract» Product| - id: str\l - name: str\l - price: float\l - stock: int\l + supplier: Supplier\l| + update_stock(quantity): bool\l + get_fulfilment_info(): str\l}", fillcolor="#E4EDFA"];
+  PhysicalProduct [label="{PhysicalProduct| - weight: float\l| + calculate_shipping_cost(): float\l}"];
+  DigitalProduct [label="{DigitalProduct| - download_size: float\l| + get_fulfilment_info(): str\l}"];
+  CanBeShipped [label="{«abstract» CanBeShipped| + calculate_shipping_cost(): float\l}"];
+  Supplier [label="{Supplier| + supplier_id: str\l + name: str\l}"];
+  Inventory [label="{Inventory| + products: list[Product]\l| + add_product(product): bool\l + find_product(id): Product\l}"];
+  Order [label="{Order| + order_id: str\l + order_lines: list[OrderLine]\l + discount: DiscountStrategy\l| + set_discount(strategy): void\l + calculate_total(): float\l}", fillcolor="#E4EDFA"];
+  OrderLine [label="{OrderLine| + product: Product\l + quantity: int\l| + calculate_subtotal(): float\l}"];
+  DiscountStrategy [label="{«abstract» DiscountStrategy| + apply(total: float): float\l}", fillcolor="#D8F3EC"];
+  NoDiscount [label="{NoDiscount| + apply(total): float\l}"];
+  PercentageDiscount [label="{PercentageDiscount| + percentage: float\l| + apply(total): float\l}"];
+  BulkDiscount [label="{BulkDiscount| + threshold: float\l + amount: float\l| + apply(total): float\l}"];
+  StudentDiscount [label="{StudentDiscount| 5% fixed\l}"];
+  ProductFactory [label="{ProductFactory| + «static» create(type, id, name, price, stock, supplier, ...): Product\l}", fillcolor="#FFF0D6"];
+  PhysicalProduct -> Product [arrowhead=empty]; DigitalProduct -> Product [arrowhead=empty]; PhysicalProduct -> CanBeShipped [arrowhead=empty];
+  NoDiscount -> DiscountStrategy [arrowhead=empty]; PercentageDiscount -> DiscountStrategy [arrowhead=empty]; BulkDiscount -> DiscountStrategy [arrowhead=empty]; StudentDiscount -> PercentageDiscount [arrowhead=empty];
+  Product -> Supplier [label="1             0..*", arrowhead=vee];
+  Inventory -> Product [dir=both, arrowtail=odiamond, arrowhead=vee, label="1         0..*"];
+  Order -> OrderLine [dir=both, arrowtail=diamond, arrowhead=vee, label="1         0..*"];
+  OrderLine -> Product [label="0..*           1", arrowhead=vee];
+  Order -> DiscountStrategy [label="0..*        1   uses", arrowhead=vee];
+  ProductFactory -> Product [style=dashed, label="«creates»", arrowhead=vee];
+}

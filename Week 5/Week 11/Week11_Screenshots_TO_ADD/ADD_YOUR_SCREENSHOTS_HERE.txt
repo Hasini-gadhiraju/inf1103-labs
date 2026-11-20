@@ -1,0 +1,8 @@
+You must capture these REAL Week 11 screenshots on your computer:
+1. Git workflow (git status, git add/commit, git push and git log after pushing).
+2. Docker build and Docker run for Week 11.
+3. Docker command running the automated tests, showing the test result.
+4. Optional: demo_lab9.py output and local test screenshot.
+
+Older screenshots are preserved in Week10_Reference, for reference only.
+Do not present those as evidence for Week 11.
